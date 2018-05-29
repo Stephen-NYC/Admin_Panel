@@ -15,5 +15,8 @@ module AdminSite
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    Raven.configure do |config|
+      config.dsn = 'https://a91680ad138b484c88eb3a233ef40cbb:fa4f2157a3db434ab6bb808d815eabd7@sentry.io/1212157'
+    end
   end
 end

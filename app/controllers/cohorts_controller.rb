@@ -18,7 +18,6 @@ class CohortsController < ApplicationController
 
   def edit
     @cohort = Cohort.find(params[:id])
-    # @student_cohort_remove = StudentCohort.find_by(cohort_id: params[:id])
       @teacher_cohort = TeacherCohort.new
       @student_cohort = StudentCohort.new
 
