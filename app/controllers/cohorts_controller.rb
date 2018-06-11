@@ -12,6 +12,8 @@ class CohortsController < ApplicationController
   def new
     @cohort = Cohort.new
     @course = Course.all
+    @teacher_cohort = TeacherCohort.new
+    @student_cohort = StudentCohort.new
   end
 
 

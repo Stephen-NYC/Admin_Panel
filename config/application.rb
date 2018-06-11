@@ -16,7 +16,8 @@ module AdminSite
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     Raven.configure do |config|
-      config.dsn = 'https://a91680ad138b484c88eb3a233ef40cbb:fa4f2157a3db434ab6bb808d815eabd7@sentry.io/1212157'
+
+      config.dsn = 'SENTRY_ENV'
     end
   end
 end
